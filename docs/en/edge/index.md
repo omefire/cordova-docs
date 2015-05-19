@@ -58,16 +58,16 @@ license: Licensed to the Apache Software Foundation (ASF) under one
             <span>Develop your own plugin.</span>
         </li>
         <li>
-            <h2>Platform and Plugin Version Management</h2>
-            <span>Allow developers to 'restore' their CLI projects to a known state without having to check in plugin and platform source code.</span>
-        </li>
-        <li>
             <h2>Privacy Guide</h2>
             <span>Learn about important mobile privacy issues.</span>
         </li>
         <li>
             <h2>Security Guide</h2>
             <span>Information and tips for building a secure application.</span>
+        </li>
+        <li>
+            <h2>Platforms and Plugins Version Management</h2>
+            <span>Save and Restore your CLI projects to a known state without hassle.</span>
         </li>
         <li>
             <h2>Whitelist Guide</h2>
