@@ -19,19 +19,20 @@ license: Licensed to the Apache Software Foundation (ASF) under one
 
 # Platforms and Plugins Version Management
 From version 4.3.0 onwards, Cordova provides the ability to save and restore platforms and plugins. <br />
-This feature allows developers to save and restore their app to a known state without having to check in all of the platform and plugin code. <br />
-When a save command is issued, the config.xml file is used to reference details about platforms and plugins versions that should be used with the app. The config.xml file is later read during a 'restore' command and the appropriate versions of platforms/plugins installed.
-One scenario where such capabilities come in handy is in large teams that work on an app, with each team member focusing on a platform or plugin. This feature makes it easier to share the project and reduce the amount of redundant code that is checked in the repository.
+This feature allows developers to save and restore their app to a known state without having to check in all of the platform and plugin source code. <br />
+When a save command is issued, the config.xml file is used to reference details about platforms and plugins versions that should be used with the app. The 'restore' step happens automatically when a **'cordova prepare'** is issued. Restoration makes use of information previously saved in the config.xml file.
+
+One scenario where save/restore capabilities come in handy is in large teams that work on an app, with each team member focusing on a platform or plugin. This feature makes it easier to share the project and reduce the amount of redundant code that is checked in the repository.
 
 
 ## Platform Versioning
 
 ### Saving platforms
-To save a platform, you can issue the following command :
+To save a platform, you issue the following command :
 
     $ cordova platform add <platform[@<version>] | directory | git_url> --save
 
-After running the above command, the resulting config.xml might look like :
+After running the above command, the resulting config.xml looks like :
 
     <?xml version='1.0' encoding='utf-8'?>
         ...
