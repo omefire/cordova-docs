@@ -189,7 +189,7 @@ platform. See [Customize icons topic](images.html) for more information.
     <allow-intent href="sms:*" />
 
 ## engine
-   Specifies what platform to restore during a prepare. For more details, see the [Platforms & Plugins Version Management](../platform_plugin_versioning_ref/index.html).
+   Specifies what platform to restore during a prepare. For more details, see the [Platforms & Plugins Version Management](../platform_plugin_versioning_ref/index.html#platform-versioning).
 
    Attributes(type) | Description
    ----------------- | ------------
@@ -199,6 +199,18 @@ platform. See [Customize icons topic](images.html) for more information.
    Examples:
 
     <engine name="android" spec="^4.0.0" />
+    
+## plugin
+   Specifies what plugin to restore during a prepare. For more details, see the [Platforms & Plugins Version Management](../platform_plugin_versioning_ref/index.html#plugin-versioning).
+
+   Attributes(type) | Description
+   ----------------- | ------------
+   name(string) | *Required* <br/> Name of the plugin to be restored
+   spec(string) | *Required* <br/> Version of the plugin to be restored
+
+   Examples:
+
+    <plugin name="cordova-plugin-device" spec="^1.1.0" />
 
 ## preference
    Sets various options as pairs of name/value attributes. Each preference's name is case-insensitive. Many preferences are unique to specific platforms,
