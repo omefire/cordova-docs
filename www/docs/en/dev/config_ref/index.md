@@ -314,6 +314,9 @@ platform. See [Customize icons topic](images.html) for more information.
     <preference name="WindowsDefaultUriPrefix" value="ms-appx://"" />
     <preference name="Windows.Mobile-MaxVersionTested" value="10.0.10031.0" />
     <preference name="Windows.Universal-MinVersion" value="10.0.0.0" />
+    <preference name="WindowsStoreIdentityName" value="Cordova.Example.ApplicationDataSample" />
+    <preference name="WindowsStorePublisherName" value="CN=Contoso Corp, O=Contoso Corp, L=Redmond, S=Washington, C=US" />
+    <preference name="WindowsToastCapable" value="true" />
 
     <!-- BlackBerry only preferences -->
     <preference name="ChildBrowser" value="disable"/>
